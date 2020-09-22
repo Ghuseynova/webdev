@@ -1,0 +1,11 @@
+.section-form {
+	padding: 200px 0 220px;
+	background: url(assets/img/form-bg.png) no-repeat center center;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+
+	.t-block__title {
+		margin: auto;
+	}
+}

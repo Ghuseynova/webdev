@@ -1,0 +1,45 @@
+.section-slider {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 115px 0 140px 270px;
+	background: #f5f6f7;
+
+	&__info {
+		flex: 0 0 298px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	&__info-avatar {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__info-title {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		color: $text-color;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 2.4px;
+		text-transform: uppercase;
+	}
+	&__info-desc {
+	}
+	&__slider {
+		flex: auto;
+		margin-left: 140px;
+	}
+}

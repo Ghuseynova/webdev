@@ -1,0 +1,122 @@
+extends ../pug/layout.pug
+
+block title
+    title WebDev
+block content
+
+    header.header
+        nav.nav.header__nav
+            ul.nav__menu
+                li.nav__item
+                    a.nav__link(href="#").is-active About
+                li.nav__item
+                    a.nav__link(href="#") Syllabus
+                li.nav__item
+                    .logo.header__logo
+                        img(src="assets/img/logo.svg", alt="logo")
+                li.nav__item
+                    a.nav__link(href="#") Projects
+                li.nav__item
+                    a.nav__link(href="#") FAQ
+
+    section.welcome
+        .welcome__block
+            h1.h1.welcome__block-title your life is WebDev
+            p.welcome__block-desc Whatever the approach to development may be, the final program must satisfy some fundamental properties
+            a(href="#").btn.btn--blue.welcome__block-btn
+                span.btn__text get started
+        .socials.welcome__socials
+            a(href="#").socials__item.socials__item--mail
+                +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-mail"})(class="")
+            a(href="#").socials__item.socials__item--facebook
+                +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-facebook"})(class="")
+            a(href="#").socials__item.socials__item--instagram
+                +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-instagram"})(class="")
+            a(href="#").socials__item.socials__item--telegram
+                +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-telegram"})(class="")
+
+    section.sec.sec--rapresent
+        .container
+            .sec__row
+                .sec__row-col
+                    .t-block
+                        h2.h2.t-block__title Rappresent your idea with a smart Design
+                        p.text.t-block__desc Tasks accompanying and related to programming include: testing, debugging, source code maintenance,&nbsp;
+                            strong implementation of build systems,&nbsp;
+                            |and management of derived artifacts, such as the machine code of computer programs.
+                        a(href="#").btn.btn--blue.t-block__block-btn
+                            span.btn__text get started
+                .sec__row-col
+                    .sec__img
+                        img(src="assets/img/content-image-1.png", alt="content img").sec__img-file
+    section.section-slider
+        .section-slider__info
+            .section-slider__info-avatar
+                img(src="assets/img/userpic.png", alt="userpic")
+            h3.section-slider__info-title our community
+            p.text.section-slider__info-desc A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language
+        .s-slider.section-slider__slider
+            .s-slider__controls
+                .s-slider__arrow.s-slider__arrow--prev
+                    +svg-item({url:"assets/img/symbol/sprite.svg", id: "arrow-left"})(class="")
+                .s-slider__counter
+                    span 1
+                    span /
+                    span 5
+                .s-slider__arrow.s-slider__arrow--next
+                    +svg-item({url:"assets/img/symbol/sprite.svg", id: "arrow-right"})(class="")
+            .s-slider__inner
+                .s-slider__item
+                    img(src="assets/img/slider-item-1.png", alt="slider img").s-slider__item-img
+                .s-slider__item
+                    img(src="assets/img/slider-item-2.png", alt="slider img").s-slider__item-img
+                .s-slider__item
+                    img(src="assets/img/slider-item-3.png", alt="slider img").s-slider__item-img
+    section.sec.sec--implement
+        .container
+            .sec__row
+                .sec__row-col
+                    .sec__img
+                        img(src="assets/img/content-image-2.png", alt="content img").sec__img-file
+                .sec__row-col
+                    .t-block
+                        h2.h2.t-block__title Implement right Code
+                        p.text.t-block__desc These might be considered part of the&nbsp;
+                            strong programming process,&nbsp;
+                            |but often the term software development is used for this larger process with the term programming, implementation
+                        a(href="#").btn.btn--blue.welcome__block-btn
+                            span.btn__text Learn more
+    section.section-form
+        form(action="#").s-form
+            h2.h2.h2--white.s-form__title sign up for our newsletter
+            .s-form__group
+                input(type="email" id='email' placeholder="E-mail")
+                button.btn.btn--with-icon.btn--blue
+                    +svg-item({url:"assets/img/symbol/sprite.svg", id: "check-icon"})(class="")
+    section.section-download
+        .t-block.section-download__t-block
+            h2.h2.t-block__title Download the App
+            p.text.t-block__desc Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.
+            .t-block__buttons
+                a(href="#").btn.btn--blue.btn--icon.welcome__block-btn
+                    span.btn__text apple store
+                    span.btn__icon
+                        +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-apple"})(class="")
+                a(href="#").btn.btn--blue.btn--icon.welcome__block-btn
+                    span.btn__text Play Market
+                    span.btn__icon
+                        +svg-item({url:"assets/img/symbol/sprite.svg", id: "icon-android"})(class="")
+    footer.footer
+        .container.footer__container
+            nav.nav.nav--footer.footer__nav
+                ul.nav__menu
+                    li.nav__item
+                        a.nav__link(href="#") Credits
+                    li.nav__item
+                        a.nav__link(href="#") Privacy
+                    li.nav__item
+                        a.nav__link(href="#") Our teams
+            .logo.footer__logo
+                img(src="assets/img/logo-footer.svg", alt="logo")
+            .footer__copyright
+                |by TonYem for RSS at 2020

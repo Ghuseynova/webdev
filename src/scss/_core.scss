@@ -1,0 +1,87 @@
+/** Basic styles **/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	box-sizing: border-box;
+	color: $black;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	// outline: 1px solid red;
+}
+
+.page {
+	position: relative;
+	width: 100%;
+	// min-width: 1600px;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 110px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+.h1 {
+	margin: 0;
+	color: $white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 75px;
+	letter-spacing: 4.5px;
+	text-transform: uppercase;
+}
+
+h2,
+.h2 {
+	color: $text-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	&--white {
+		color: $white;
+	}
+}
+
+.text {
+	color: #4e4e4e;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}

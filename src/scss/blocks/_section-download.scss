@@ -1,0 +1,16 @@
+.section-download {
+	display: flex;
+	justify-content: center;
+	padding: 120px 0 180px;
+
+	&__t-block {
+		position: relative;
+		top: -5px;
+		max-width: 480px;
+		text-align: center;
+
+		.t-block__title {
+			margin: auto;
+		}
+	}
+}

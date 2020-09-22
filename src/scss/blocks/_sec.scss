@@ -1,0 +1,30 @@
+.sec {
+	$s: &;
+	padding: 120px 0 140px;
+	background-color: $white;
+	&--rapresent {
+	}
+	&--implement {
+		#{$s}__row {
+			justify-content: flex-start;
+
+			&-col {
+				&:last-child {
+					margin-left: 140px;
+				}
+			}
+		}
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__row-col {
+		flex: 0 0 407px;
+	}
+	&__img {
+	}
+	&__img-file {
+	}
+}

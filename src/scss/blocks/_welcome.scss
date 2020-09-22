@@ -1,0 +1,29 @@
+.welcome {
+	width: 100%;
+	min-height: 744px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('assets/img/welcome-bg.png') no-repeat center;
+	background-size: cover;
+	&__block {
+		padding: 230px 0 183px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__block-title {
+	}
+	&__block-desc {
+		max-width: 504px;
+		margin: 20px 0 30px;
+		color: $white;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+	}
+	&__block-btn {
+	}
+}

@@ -1,0 +1,17 @@
+.header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 95px;
+	width: 100%;
+	background-color: $black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__nav {
+		margin-left: -16px;
+	}
+	&__logo {
+	}
+}

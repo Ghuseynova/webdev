@@ -1,0 +1,25 @@
+.footer {
+	padding: 60px 0 80px;
+	background-color: $black;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: -5px;
+		padding: 0;
+	}
+	&__nav {
+	}
+	&__logo {
+		position: relative;
+		left: -33px;
+	}
+	&__copyright {
+		color: #818181;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

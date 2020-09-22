@@ -1,0 +1,13 @@
+.t-block {
+	&__title {
+		max-width: 390px;
+	}
+	&__desc {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: center;
+	}
+}
